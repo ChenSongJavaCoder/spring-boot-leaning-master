@@ -12,7 +12,6 @@ import java.util.Date;
 public class FanoutReceiverA extends BaseAbstractClass {
 
 
-
     @RabbitHandler
     public void process(String message) {
         System.out.println("fanout Receiver A: " + message + "接收时间：" + sdf.format(new Date()));

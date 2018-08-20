@@ -1,12 +1,12 @@
-package com.neo;
+package com.cs.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RabbitMQApplication {
+public class DemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RabbitMQApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 }

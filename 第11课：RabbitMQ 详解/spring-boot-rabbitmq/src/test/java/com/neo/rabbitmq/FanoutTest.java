@@ -12,14 +12,14 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class FanoutTest {
 
-	@Autowired
-	private FanoutSender sender;
+    @Autowired
+    private FanoutSender sender;
 
-	@Test
-	public void fanoutSender() throws Exception {
-		sender.send();
-		Thread.sleep(1000l);
-	}
+    @Test
+    public void fanoutSender() throws Exception {
+        sender.send();
+        Thread.sleep(1000l);
+    }
 
 
 }

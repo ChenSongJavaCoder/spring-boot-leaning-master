@@ -10,13 +10,13 @@ import java.util.Date;
 @Component
 public class FanoutSender extends BaseAbstractClass {
 
-	@Autowired
-	private AmqpTemplate rabbitTemplate;
+    @Autowired
+    private AmqpTemplate rabbitTemplate;
 
-	public void send() {
-		String context = "hi, fanout msg "+ "发送时间：" + sdf.format(new Date());
-		System.out.println("Sender : " + context);
-		this.rabbitTemplate.convertAndSend("fanoutExchange","", context);
-	}
+    public void send() {
+        String context = "hi, fanout msg " + "发送时间：" + sdf.format(new Date());
+        System.out.println("Sender : " + context);
+        this.rabbitTemplate.convertAndSend("fanoutExchange", "", context);
+    }
 
 }

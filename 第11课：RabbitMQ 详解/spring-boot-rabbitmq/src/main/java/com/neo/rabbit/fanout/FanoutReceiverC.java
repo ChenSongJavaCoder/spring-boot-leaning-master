@@ -13,7 +13,7 @@ public class FanoutReceiverC extends BaseAbstractClass {
 
     @RabbitHandler
     public void process(String message) {
-        System.out.println("fanout Receiver C: " + message+ "接收时间：" + sdf.format(new Date()));
+        System.out.println("fanout Receiver C: " + message + "接收时间：" + sdf.format(new Date()));
     }
 
 }
